@@ -1,0 +1,213 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+#header {
+    background-image: url('/Users/chargeitothegame/Downloads/ac88a21a5da22a81fcf4765fea66bddf.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content .btn {
+    background-color: #d22328;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.header-content .btn:hover {
+    background-color: #ff444f;
+}
+
+/* Services Section */
+#services {
+    padding: 4rem 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.service-item i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #d22328;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.blog-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.blog-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-basis: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post h3 {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+.blog-post p {
+    margin: 1rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+    background-color: #d22328;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #ff444f;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #222;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#footer a {
+    color: #d22328;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-grid, .blog-grid {
+        flex-direction: column;
+    }
+
+    .service-item, .blog-post {
+        width: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .header-content .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
