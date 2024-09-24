@@ -1,4 +1,4 @@
-# Security Group for RDS (allow MySQL traffic)
+# Security Group for RDS 
 resource "aws_security_group" "rds_sg" {
     vpc_id = aws_vpc.my_vpc.id
 
